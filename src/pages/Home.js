@@ -66,6 +66,12 @@ export default function Home() {
           {isDeleting && <Delete deleteId={deleteId} setIsDeleting={setIsDeleting} images={images} setImages={setImages} /> }
           {isAdding && <Add setIsAdding={setIsAdding} /> }
           {<Images images={images} isLoading={isLoading} setDeleteId={setDeleteId} setIsDeleting={setIsDeleting} />}
+
+          <footer className="fixed items-center bottom-[2px]">
+          <p className="font-body text-[#A9A9A9] non-italic font-medium text-[14px] leading-[17px] text-center">created by <b className="">
+            <a href="https://github.com/Aaron-Acheampong" target='_blank'>aaronacheampong</a></b> - <a href="https://devchallenges.io/" target='_blank'>devChallenges.io</a>
+          </p>
+        </footer>
     </div>
   )
 }
