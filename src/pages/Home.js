@@ -8,7 +8,7 @@ import Images from '../components/Images';
 import { Link, useNavigate } from 'react-router-dom';
 //import { AuthContext } from '../context/authContext';
 import axios from 'axios';
-import { baseUrl } from '../../config';
+import { baseUrl } from '../config';
 
 export default function Home() {
 
