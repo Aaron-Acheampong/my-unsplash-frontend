@@ -8,6 +8,7 @@ import Images from '../components/Images';
 import { Link, useNavigate } from 'react-router-dom';
 //import { AuthContext } from '../context/authContext';
 import axios from 'axios';
+import { baseUrl } from '../../config';
 
 export default function Home() {
 
@@ -28,7 +29,7 @@ export default function Home() {
         const fetchImages = async () => {
           
             try {
-              const res = await axios.get(`api/posts?label=${param}`);
+              const res = await axios.get(`${baseurl}api/posts?label=${param}`);
               setIsLoading(false);
               setImages(res.data);
             } catch(err) {
