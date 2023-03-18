@@ -29,7 +29,7 @@ export default function Home() {
         const fetchImages = async () => {
           
             try {
-              const res = await axios.get(`${baseurl}api/posts?label=${param}`);
+              const res = await axios.get(`${baseUrl}api/posts?label=${param}`);
               setIsLoading(false);
               setImages(res.data);
             } catch(err) {
